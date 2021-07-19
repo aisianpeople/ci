@@ -1,5 +1,9 @@
-function getGreeting(name){
-    return "Hi " + name;
-}
+module.exports = {
 
-module.exports = getGreeting;
+    getGreeting: (name) => {
+        return "Hi " + name;
+    },
+    getNumber: () => {
+        return 2;
+    }
+}
