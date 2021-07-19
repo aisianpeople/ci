@@ -6,7 +6,5 @@ version: 2.1 # using 2.1 provides access to orbs and other features
 workflows:
   matrix-tests:
     jobs:
-      - node/with-cache:
-          steps:
-            - run: npm install
+      - run: npm install
       - run: npm run test
